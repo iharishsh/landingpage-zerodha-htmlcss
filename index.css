@@ -1,55 +1,120 @@
 * {
-    background-color: #fff;
-    font-family: "Inter", serif;
+  background-color: #fff;
+  font-family: "Inter", serif;
 }
 
 body {
-    font-weight: 400;
+  font-weight: 400;
+  margin: 0;
 }
 
 .navbar {
-    box-sizing: border-box;
-    box-shadow: 2px 1px 2px #eee;
+  box-sizing: border-box;
+  box-shadow: 2px 1px 2px #eee;
+  width: 100%;
 }
 
 .nav-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
-    margin: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  margin: 0 5rem;
 }
 
 .nav-content img {
-    max-height: 17px;
-    cursor: pointer;
+  max-height: 17px;
+  cursor: pointer;
 }
 
 .navlist {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    color: #666;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #666;
 }
 
 .list:hover {
-    color: #387ed1;
-    cursor: pointer;
+  color: #387ed1;
+  cursor: pointer;
 }
 
 .nav-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 18px;
-    height: 16px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 18px;
+  height: 16px;
+  cursor: pointer;
+  margin-left: 20px;
 }
 
 .nav-icon span {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background: #424242;
-    border-radius: 9px;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #424242;
+  border-radius: 9px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5vh 1rem;
+}
+
+.hero img {
+  max-height: 45vh;
+  width: 50%;
+  margin-bottom: 35px;
+}
+
+.hero span {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.hero button {
+  cursor: pointer;
+  margin-top: 25px;
+  background-color: #387ed1;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  padding: 10px 30px;
+  font-size: 1.2em;
+}
+
+.hero button:hover {
+  background-color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-content {
+    margin: 0 1rem;
+  }
+  .navlist {
+    gap: 15px;
+  }
+  .hero img {
+    max-height: 35vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero img {
+    max-height: 25vh;
+  }
+  .hero span {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .hero button {
+    padding: 8px 20px;
+    font-size: 1em;
+  }
 }
