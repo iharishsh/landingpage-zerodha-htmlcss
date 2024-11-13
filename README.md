@@ -1,2 +1,2 @@
 #Landing Page of Zerodha using HTML & CSS
--- Assignment of 100xdevs of Chorot 3.0 
+-- Assignment of 100xdevs of Cohort 3.0 
